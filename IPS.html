@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+    <title>ICT AP KENRIC8A</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <div class="logo" data-aos="zoom-in" data-aos-duration="1000">
+        
+            </div>
+            <div class="links">
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100"><a href="index.html">Home</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200"><a href="bahasaindonesia.html">BI</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300"><a href="english.html">English</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400"><a href="mandarin.html">Mandarin</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500"><a href="pkn.html">PKN</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500"><a href="IPS.html">IPS</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500"><a href="agama.html">Agama</a></div>
+            </div>
+            <i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>
+        </div>
+        <div class="dropdown">
+            <div class="links">
+                <a href="index.html">Home</a>
+                <a href="bahasaindonesia.html">BI</a>
+                <a href="english.html">English</a>
+                <a href="mandarin.html">Mandarin</a>
+                <a href="pkn.html">PKN</a>
+                <a href="IPS.html">IPS</a>
+                <a href="agama.html">Agama</a>
+                <i class="fa-solid fa-xmark cancel" onclick="cancel()"></i>
+            </div>
+        </div>
+    </nav>
+        <section>
+                <div class="content">
+                    <h1 data-aos="fade-left" data-aos-duration="1000" data-aos-delay="800">Ini adalah halaman <span>IPS</span></h1>
+
+                    <p data-aos="flip-up" data-aos-duration="1000" data-aos-delay="1000">Dalam IPS, kita belajar tentang sejarah dan ekonomi.</p>
+
+                    <img data-aos="flip-up" data-aos-duration="1000" data-aos-delay="1000" src="wisatawan.jpg" height="300" width="200"> <img data-aos="flip-up" data-aos-duration="1000" data-aos-delay="1000" src="wisatawan 2.jpg" height="300" width="200"> <img data-aos="flip-up" data-aos-duration="1000" data-aos-delay="1000" src="museum purba.jpg" height="200" width="300">
+
+                    <h2 data-aos="fade-left" data-aos-duration="1000" data-aos-delay="800"><span>Membajak sawah</span></h2>
+
+                    <p data-aos="flip-up" data-aos-duration="1000" data-aos-delay="1000">Salah satu aktivitas kita melakukan saat live in adalah membajak sawah. Tujuan untuk membajak sawah adalah untuk mengemburkan tanah, meningkatkan aerosi tanah, mengaduk bahan original, dan membuat saluran air. </p>
+                
+                    <h2 data-aos="fade-left" data-aos-duration="1000" data-aos-delay="800"><span>Hasil Wawancara Wisatawan</span></h2>
+
+                    <p data-aos="flip-up" data-aos-duration="1000" data-aos-delay="1000">Wisatawan domestik: "Fasilitas tentu bagus, tempat sangat berseni, cukup bersih, tempat sangat indah."</p>
+                
+                    <p data-aos="flip-up" data-aos-duration="1000" data-aos-delay="1000">Wisatawan asing: "The place is very beautiful, very clean especially on the outside. Facilities like the toilets are okay, the price is a little bit expensive but it's alright, and the place is very safe."</p>
+
+                    <h2 data-aos="fade-left" data-aos-duration="1000" data-aos-delay="800"><span>Hasil Wawancara Fasilitator Museum Sangiran</span></h2>
+
+                    <p data-aos="flip-up" data-aos-duration="1000" data-aos-delay="1000">Manusia berburu agar dapat mengadaptasi kepada butuhan masanya. Pernyebab pergantian cara hidupnya adalah karena penggantian iklim, penggantian lingkungan, dan perubah cara piikiran.</p>
+
+                    <h2 data-aos="fade-left" data-aos-duration="1000" data-aos-delay="800"><span>Hasil Wawancara Orang tua Asuh Live in</span></h2>
+
+                    <p data-aos="flip-up" data-aos-duration="1000" data-aos-delay="1000">Saat live in saya tinggal bersama ibu bernama Sri Suwarni. Dia jual gorengan, tempat tinggalnyha adalah warisan dari suami, dia adalah anggota masyarakat. Tradisi pada keluarganya adalah kenduri, tradisi masyarakat adalah bulan suro dan kenduri.Pengelolaan keuangan adalah untuk makan dan kuliah anaknya. Pengelolaan lingkungan adalah untuk kebersihan dan gotong royong.</p>
+                </div>
+            </div>
+        </section>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+          AOS.init({offset:0});
+        </script>
+        <script>
+            function hamburg(){
+                const navbar = document.querySelector(".dropdown")
+                navbar.style.transform = "translateY(0px)"
+            }
+            function cancel(){
+                const navbar = document.querySelector(".dropdown")
+                navbar.style.transform = "translateY(-500px)"
+            }
+        </script>
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+    <title>ICT AP KENRIC8A</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <div class="logo" data-aos="zoom-in" data-aos-duration="1000">
+        
+            </div>
+            <div class="links">
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100"><a href="index.html">Home</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200"><a href="bahasaindonesia.html">BI</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300"><a href="english.html">English</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400"><a href="mandarin.html">Mandarin</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500"><a href="pkn.html">PKN</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500"><a href="IPS.html">IPS</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500"><a href="agama.html">Agama</a></div>
+            </div>
+            <i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>
+        </div>
+        <div class="dropdown">
+            <div class="links">
+                <a href="index.html">Home</a>
+                <a href="bahasaindonesia.html">BI</a>
+                <a href="english.html">English</a>
+                <a href="mandarin.html">Mandarin</a>
+                <a href="pkn.html">PKN</a>
+                <a href="IPS.html">IPS</a>
+                <a href="agama.html">Agama</a>
+                <i class="fa-solid fa-xmark cancel" onclick="cancel()"></i>
+            </div>
+        </div>
+    </nav>
+        <section>
+                <div class="content">
+                    <h1 data-aos="fade-left" data-aos-duration="1000" data-aos-delay="800">Ini adalah halaman <span>agama</span></h1>
+
+                    <p data-aos="flip-up" data-aos-duration="1000" data-aos-delay="1000">Dalam agama, kita belajar tentang Yesus. Saat edutrip, kita mengunjungi 2 gereja. Kedua gereja ini sangat indah. Kita juga melakukan jalan salib di Gereja Hati Kudus Yesus Ganjuran.</p>
+
+                    <img data-aos="flip-up" data-aos-duration="1000" data-aos-delay="1000" src="he-is-risen-message-lvl1-copy.jpg" height="200" width="300"> <img data-aos="flip-up" data-aos-duration="1000" data-aos-delay="1000" src="gereja.jpg" height="200" width="300"> <img data-aos="flip-up" data-aos-duration="1000" data-aos-delay="1000" src="gereja 2.jpg" height="200" width="300">
+
+                    <h2 data-aos="fade-left" data-aos-duration="1000" data-aos-delay="800"><span>Gereja Maria Assumpta Pakem</span></h2>
+
+                    <p data-aos="flip-up" data-aos-duration="1000" data-aos-delay="1000">Gereja pertama yang kami kunjungi adalah Gereja Maria Assumpta Pakem. Gereja ini memiliki patung Bunda Maria yang sangat terdekorasi dengan lilin, bel, dan sebuah well besar. Mereka mulai bangun gereja ini pada tahun 1924 dan selesai padaw tahun 1958. Mereka juga memiliki tempat outdoor untuk ikut misa jika dalam penuh. </p>
+                    
+                    <h2 data-aos="fade-left" data-aos-duration="1000" data-aos-delay="800"><span>Gereja Hati Kudus Yesus Ganjuran</span></h2>
+
+                    <p data-aos="flip-up" data-aos-duration="1000" data-aos-delay="1000">Gereja kedua yang kami kunjungi adalah Gereja Hati Kudus Yesus Ganjuran yang terletak pada Jl. Ganjuran, Jogodayoh, Sumbermulyo, Kec. Bambanglipuro, Kabupaten Bantul, Daerah Istimewa Yogyakarta 55764. Suasana doa di gereja ini sangat tenang. Gereja ini sangat luas, sangat bersih, dan ada toko untuk panti asuhan. Gereja dapat memberikan manfaat ekonomi bagi masyarakat dengan adanya banyak kotak donasi sekitar gerejanya. Selain tempat beribadah, gereja ini juga tempat untuk bantu panti asuhan dengan tokohnya. Mungkin mereka dapat menambah layar dalam gedung gerejanya seperti Gereja Santo Laurensius.</p>
+                </div>
+            </div>
+        </section>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+          AOS.init({offset:0});
+        </script>
+        <script>
+            function hamburg(){
+                const navbar = document.querySelector(".dropdown")
+                navbar.style.transform = "translateY(0px)"
+            }
+            function cancel(){
+                const navbar = document.querySelector(".dropdown")
+                navbar.style.transform = "translateY(-500px)"
+            }
+        </script>
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+    <title>ICT AP KENRIC8A</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <div class="logo" data-aos="zoom-in" data-aos-duration="1000">
+        
+            </div>
+            <div class="links">
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100"><a href="index.html">Home</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200"><a href="bahasaindonesia.html">BI</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300"><a href="english.html">English</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400"><a href="mandarin.html">Mandarin</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500"><a href="pkn.html">PKN</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500"><a href="IPS.html">IPS</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500"><a href="agama.html">Agama</a></div>
+            </div>
+            <i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>
+        </div>
+        <div class="dropdown">
+            <div class="links">
+                <a href="index.html">Home</a>
+                <a href="bahasaindonesia.html">BI</a>
+                <a href="english.html">English</a>
+                <a href="mandarin.html">Mandarin</a>
+                <a href="pkn.html">PKN</a>
+                <a href="IPS.html">IPS</a>
+                <a href="agama.html">Agama</a>
+                <i class="fa-solid fa-xmark cancel" onclick="cancel()"></i>
+            </div>
+        </div>
+    </nav>
+        <section>
+                <div class="content">
+                    <h1 data-aos="fade-left" data-aos-duration="1000" data-aos-delay="800">Ini adalah halaman <span>PKN</span></h1>
+
+                    <p data-aos="flip-up" data-aos-duration="1000" data-aos-delay="1000">Dalam PKN, kita belajar tentang kearifan lokal, budaya, dan tradisi. Saat edutrip, kami mengunjungi Candi Prambanan dan dapat melihat seluruh keindahannya.</p>
+
+                    <img data-aos="flip-up" data-aos-duration="1000" data-aos-delay="1000" src="budaya.jpeg" height="200" width="300"> <img data-aos="flip-up" data-aos-duration="1000" data-aos-delay="1000" src="9249.jpg" height="200" width="300">
+
+                    <p data-aos="flip-up" data-aos-duration="1000" data-aos-delay="1000">Arkitektur Prambanan sangat istimewa kaerna memiliki desain yang kreatif dan batu kokoh. Candi Borobudur dan Prambanan berdua peninggalan peradaban di Jawa Tengah. Candi Borobudur bercorak Buddha sedangkan Candi Prambanan bercorak Hindu. Warisan arsitektur candi Prambanan memengaruhi bangunan-bangunan lain di Indonesia lewat seni relief pada hiasan dinding atau ukiran yang menggambarkan cerita-cerita sejarah. Peran agama dalam pembangunan candi Prambanan dapat dilihat dari setiap candi yang didedikasikan untuk dewa Hindu. Peran budaya dalam candi tersebut dapat dilihat dari bangunan yang sangat rumit dan detail. Kerajaan Yogyakarta juga memainkan peran dalam pembentukan nasionalisme Indonesia karena setelah kemerdekaan, Yogyakarta menjadi ibu kota Republik Indonesia pada tahun 1946-1949. Keraton ini mempertahankan tradisi dan nilai-nilai budaya Indonesia sebagai pusat pelestarian berbagai seni tradisional. </p>
+                </div>
+            </div>
+        </section>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+          AOS.init({offset:0});
+        </script>
+        <script>
+            function hamburg(){
+                const navbar = document.querySelector(".dropdown")
+                navbar.style.transform = "translateY(0px)"
+            }
+            function cancel(){
+                const navbar = document.querySelector(".dropdown")
+                navbar.style.transform = "translateY(-500px)"
+            }
+        </script>
+</body>
+</html>

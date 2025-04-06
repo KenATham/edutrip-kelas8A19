@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+    <title>ICT AP KENRIC8A</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <div class="logo" data-aos="zoom-in" data-aos-duration="1000">
+        
+            </div>
+            <div class="links">
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100"><a href="index.html">Home</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200"><a href="bahasaindonesia.html">BI</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300"><a href="english.html">English</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400"><a href="mandarin.html">Mandarin</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500"><a href="pkn.html">PKN</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500"><a href="IPS.html">IPS</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500"><a href="agama.html">Agama</a></div>
+            </div>
+            <i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>
+        </div>
+        <div class="dropdown">
+            <div class="links">
+                <a href="index.html">Home</a>
+                <a href="bahasaindonesia.html">BI</a>
+                <a href="english.html">English</a>
+                <a href="mandarin.html">Mandarin</a>
+                <a href="pkn.html">PKN</a>
+                <a href="IPS.html">IPS</a>
+                <a href="agama.html">Agama</a>
+                <i class="fa-solid fa-xmark cancel" onclick="cancel()"></i>
+            </div>
+        </div>
+    </nav>
+        <section>
+                <div class="content">
+                    <h1 data-aos="fade-left" data-aos-duration="1000" data-aos-delay="800">This is the <span>English</span> page</h1>
+
+                    <p data-aos="flip-up" data-aos-duration="1000" data-aos-delay="1000">For English, we were told to create an article about what we did during our edutrip. I decided to make mine about the live in experience.</p>
+
+                    <img data-aos="flip-up" data-aos-duration="1000" data-aos-delay="1000" src="article.jpg" height="200" width="300"> <img data-aos="flip-up" data-aos-duration="1000" data-aos-delay="1000" src="travel.jpeg" height="200" width="300">
+
+                    <h2 data-aos="fade-left" data-aos-duration="1000" data-aos-delay="800"><span>The Uniqueness of Desa Pentingsari</span></h2>
+
+                    <p data-aos="flip-up" data-aos-duration="1000" data-aos-delay="1000">My favorite experience during the edutrip was the live-in due to how fun it was. The live-in was done in Desa Pentingsari for the first four days of the edutrip. Me and my roommates were chosen to live with a mother, her name is Sri Suwarni. The nature was so beautiful I felt like I was in heaven. It was very windy there as well, all the trees were waving at me. So, Desa Pentingsari is an amazing place to learn new things and have fun.
+                    </p>
+                    
+                    <h3 data-aos="fade-left" data-aos-duration="1000" data-aos-delay="800"><span>Fun in the Village</span></h3>
+
+                    <p data-aos="flip-up" data-aos-duration="1000" data-aos-delay="1000">Desa Pentingsari is a wonderful place with tons of exciting activities. Ranging from physical activities like catching fish that we gave to our parent in the live-in house, plowing the fields, playing football in the mud, and planting crops to learning more about our culture through making batik by tracing a drawing with hot melted wax, learning how to play the kenong which is a gamelan instrument, and learning traditional dance. By far my favorite activity was riding the jeep in the pouring rain. It felt like I was taking a shower the entire ride. The ride was so bumpy and we stopped by the bunker where people took shelter in during an eruption of Mount Merapi. Fun fact, the people thought it was safe to stay there but lava got in and the people died due to the extreme heat. We also drove into huge puddles on the way back to the village which were always fun to drive into every time.
+                    </p>
+
+                    <h3 data-aos="fade-left" data-aos-duration="1000" data-aos-delay="800"><span>Change in Perspective</span></h3>
+
+                    <p data-aos="flip-up" data-aos-duration="1000" data-aos-delay="1000">Desa Pentingsari is a great place to provide a new insight. This trip allowed me to make new friends and get closer to friends I already had. This trip made me realize I should spend more time with my friends and further appreciate our time together more. When me and my roommates first arrived, we didn’t get that good of a home but after spending time there I realized that it doesn’t matter what house we get, we have to be grateful for what we have. At the last day of live-in, we cleaned up a road filled with a billion leaves. Some leaves were difficult to sweep as if they had been glued to the road but from this I learnt the value of teamwork and to care for the environment. Desa Pentingsari is not just a place to have some fun, but is actually really useful when it comes to providing new life lessons.</p>
+                
+                    <p data-aos="flip-up" data-aos-duration="1000" data-aos-delay="1000">In conclusion, Desa Pentingsari is a beautiful place full of exciting activities. I really recommend this village if you’re looking to have some fun and learn new things. Through this experience I learnt to appreciate the thing I have more. Remember, if you come to this village, try to enjoy your time there and haven the most fun you can.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+          AOS.init({offset:0});
+        </script>
+        <script>
+            function hamburg(){
+                const navbar = document.querySelector(".dropdown")
+                navbar.style.transform = "translateY(0px)"
+            }
+            function cancel(){
+                const navbar = document.querySelector(".dropdown")
+                navbar.style.transform = "translateY(-500px)"
+            }
+        </script>
+</body>
+</html>
